@@ -31,11 +31,7 @@ terraform {
 
 # Azure Provider - automatically uses Managed Identity from Jenkins VM
 provider "azurerm" {
-  features {
-    resource_group {
-      prevent_deletion_if_contains_resources = false
-    }
-  }
+  features {}
 }
 # Optional: Set environment if using Azure Government or China
 # environment = "public"
